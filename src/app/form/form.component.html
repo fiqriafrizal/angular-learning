@@ -1,0 +1,23 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" />
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" />
+  </div>
+
+  <div>
+    <label for="age">Age:</label>
+    <input id="age" formControlName="age" type="number" />
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<div *ngIf="submitted">
+  <h3>Form Values:</h3>
+  <pre>{{ myForm.value | json }}</pre>
+</div>

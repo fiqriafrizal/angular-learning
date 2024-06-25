@@ -1,0 +1,32 @@
+<!-- <form [formGroup]="myForm" (submit)="onSubmit()">
+  <div>
+    <label for="username">Userame:</label>
+    <input id="username" formControlName="username" />
+  </div>
+
+  <div>
+    <label for="password">Password:</label>
+    <input id="password" formControlName="password" />
+  </div>
+
+  <button type="submit">Submit</button>
+</form> -->
+
+<form [formGroup]="myForm" (submit)="onSubmit()">
+  <div>
+    <label for="userid">userid:</label>
+    <input id="userid" formControlName="userid" type="number" />
+  </div>
+
+  <div>
+    <label for="title">title:</label>
+    <input id="title" formControlName="title" type="text" />
+  </div>
+
+  <div>
+    <label for="body">body:</label>
+    <input id="body" formControlName="body" type="text" />
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
